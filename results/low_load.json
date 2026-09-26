@@ -1,0 +1,18 @@
+{
+  "no_batching": {
+    "total_avg_ms": 14.04,
+    "triton_infer_avg_ms": 3.391
+  },
+  "small_batch": {
+    "total_avg_ms": 59.59,
+    "triton_infer_avg_ms": 54.65
+  },
+  "medium_batch": {
+    "total_avg_ms": 109.92,
+    "triton_infer_avg_ms": 105.375
+  },
+  "large_batch": {
+    "total_avg_ms": 209.5,
+    "triton_infer_avg_ms": 205.395
+  }
+}
