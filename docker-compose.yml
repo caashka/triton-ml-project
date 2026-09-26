@@ -5,10 +5,9 @@ services:
   # ═══════════════════════════════════════════════════════════════
   triton:
     # Официальный образ NVIDIA Triton (min-вариант: бэкенд onnxruntime)
-    # image: nvcr.io/nvidia/tritonserver:24.01-py3-min
-    # В реестре nvcr.io недоступен из РФ (403), поэтому используется
-    # его зеркало с Docker Hub (slim-вариант 23.11 с бэкендом onnxruntime)
-    image: xandr0z/tritonserver:23.11-py3-slim-1.0.1
+    image: nvcr.io/nvidia/tritonserver:24.01-py3-min
+    # Запасной вариант, если nvcr.io недоступен (403 из РФ):
+    # image: xandr0z/tritonserver:23.11-py3-slim-1.0.1
     container_name: triton-server
     ports:
       - "8000:8000"  # HTTP API
